@@ -103,13 +103,18 @@
     <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="map__container">
+        <picture>
+          <source type="image/png" media="(min-width:1280px)"
+            srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width:768px)"
+            srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400">
+          <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Местоположение офиса"
+            class="map__image" width="320" height="362">
+        </picture>
         <div class="map__contacts map-contacts">
-          <p class="map-contacts__text">приглашаем
-            к сотрудничеству
-            дилеров!</p>
+          <p class="map-contacts__text">приглашаем к сотрудничеству дилеров!</p>
           <div class="map-contacts__info">
-            <address class="map-contacts__address">ул. Большая
-              Конюшенная, д. 19/8</address>
+            <address class="map-contacts__address">ул. Большая Конюшенная, д. 19/8</address>
             <address class="map-contacts__address">Санкт-Петербург</address>
           </div>
         </div>
