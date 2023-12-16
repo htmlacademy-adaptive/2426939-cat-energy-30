@@ -9,9 +9,19 @@
 
 <body>
   <header class="header">
-    <a href="" class="header__logo">
-      <img src="" class="header__logo-image" width="70" height="59" alt="Логогит Кэт энерджи">
-      <img src="" class="header__logo-text" width="118" height="21" alt="Cat Energy">
+    <a href="index.html" class="header__logo">
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img src="images/logo-mobile.svg" class="header__logo-image" width="33" height="38" alt="Логогит Кэт энерджи">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-desktop.svg" width="118"
+          height="21">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101"
+          height="18">
+        <img src="images/logo-text-mobile.svg" class="header__logo-text" width="101" height="18" alt="Cat Energy">
+      </picture>
     </a>
     <nav class="navigation">
       <button class="navigation__toggle" type="button">
@@ -20,13 +30,13 @@
       <div class="container">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="" class="navigation__link">Главная</a>
+            <a href="index.html" class="navigation__link">Главная</a>
           </li>
           <li class="navigation__item navigation__item--current">
-            <a href="" class="navigation__link">Каталог продукции</a>
+            <a href="catalog.html" class="navigation__link">Каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Подбор программы</a>
+            <a href="form.html" class="navigation__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -43,11 +53,11 @@
             <fieldset class="questionnaire__field information-pet">
               <legend class="visually-hidden">Заполнение информации о коте</legend>
               <label for="name" class="information-pet__label label">ИМЯ:*</label>
-              <input id="name" type="text" class="information-pet__text text-input" placeholder="Барсик">
+              <input id="name" type="text" class="information-pet__text text-input" placeholder="Барсик" required>
               <label for="weight" class="information-pet__label label">Вес (кг):*</label>
-              <input id="weight" type="text" class="information-pet__text text-input" placeholder="7">
+              <input id="weight" type="text" class="information-pet__text text-input" placeholder="7" required>
               <label for="age" class="information-pet__label label">Возраст (лет):</label>
-              <input id="age" type="text" class="information-pet__text text-input" placeholder="7">
+              <input id="age" type="text" class="information-pet__text text-input" placeholder="7" required>
             </fieldset>
             <fieldset class="questionnaire__field task">
               <legend class="visually-hidden">Основная задача</legend>
@@ -68,9 +78,9 @@
           <fieldset class="questionnaire__field contact">
             <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
             <label for="email" class="contact__label label">E-mail:*</label>
-            <input id="email" type="email" class="contact__text text-input" placeholder="кuklachev@gmail.com">
+            <input id="email" type="email" class="contact__text text-input" placeholder="кuklachev@gmail.com" required>
             <label for="telephone" class="contact__label label">Телефон:*</label>
-            <input id="telephone" type="text" class="contact__text text-input" placeholder="8 (960) 900-60-90">
+            <input id="telephone" type="tel" class="contact__text text-input" placeholder="8 (960) 900-60-90" required>
           </fieldset>
           <fieldset class="questionnaire__field commentary">
             <legend class="visually-hidden">Комментарий</legend>
@@ -122,8 +132,12 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__link" href="">
-      <img src="" alt="Логотип Кэт энерджи" width="128" height="24">
+    <a class="fooder__link" href="index.html">
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/footer-logo.svg" width="128" height="24">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/footer-logo.svg" width="128" height="24">
+        <img src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
+      </picture>
     </a>
     <ul class="social-list">
       <li class="social-item">
@@ -143,13 +157,13 @@
       </li>
     </ul>
     <div class="footer__copyright copyright">
-      <a class="copyright__link" href="">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
       </a>
-      <a class="copyright__link copyright__link--image" href="">
+      <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="" alt="Логотип Html Academy" width="27" height="34">
       </a>
-    </div>
+    </div>Р
   </footer>
 </body>
 
