@@ -1,0 +1,26 @@
+.questionnaire {
+  &_discription {
+    color: $black-color;
+    font-family: $oswald-font;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__title {}
+
+  &__form {}
+
+  &__form-wrapper {}
+
+  &__field {}
+
+  &__button {}
+
+  &__text {
+    color: $black-color;
+    text-align: center;
+    line-height: 16px;
+  }
+}

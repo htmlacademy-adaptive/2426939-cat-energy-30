@@ -1,0 +1,21 @@
+.navigation {
+  &__toggle {}
+
+  &__list {}
+
+  &__item {}
+
+  &__item--current {}
+
+  &__link {
+    color: $black-color;
+    font-family: $oswald-font;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    &--color {
+      color:$white-color;
+    }
+  }
+}

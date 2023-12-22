@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Подбор программы</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="header">
     <a href="index.html" class="header__logo">
       <picture>
@@ -76,18 +79,18 @@
             </fieldset>
           </div>
           <fieldset class="questionnaire__field contact">
-            <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
+            <legend class="contact__title form-title">Контактные данные (владельца кота)</legend>
             <label for="email" class="contact__label label">E-mail:*</label>
             <input id="email" type="email" class="contact__text text-input" placeholder="кuklachev@gmail.com" required>
             <label for="telephone" class="contact__label label">Телефон:*</label>
             <input id="telephone" type="tel" class="contact__text text-input" placeholder="8 (960) 900-60-90" required>
           </fieldset>
           <fieldset class="questionnaire__field commentary">
-            <legend class="visually-hidden">Комментарий</legend>
+            <legend class="commentary__title form-title">Комментарий</legend>
             <textarea class="commentary__text" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="questionnaire__field additionally">
-            <legend class="visually-hidden">Дополнительно</legend>
+            <legend class="additionally__title form-title">Дополнительно</legend>
             <label class="additionally__label label">Сахарозаменитель
               <input type="checkbox" class="additionally__input text-input" checked>
               <span class="additionally__ckeckboxmark ckeckboxmark"></span>
@@ -139,19 +142,19 @@
         <img src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
       </picture>
     </a>
-    <ul class="social-list">
-      <li class="social-item">
-        <a href="https://vk.com/htmlacademy" class="social-link">
+    <ul class="social">
+      <li class="social__item">
+        <a href="https://vk.com/htmlacademy" class="social__link">
           <span class="visually-hidden">ВКонтакте.</span>
         </a>
       </li>
-      <li class="social-item">
-        <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+      <li class="social__item">
+        <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
-      <li class="social-item">
-        <a href="https://t.me/htmlacademy" class="social-link">
+      <li class="social__item">
+        <a href="https://t.me/htmlacademy" class="social__link">
           <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>

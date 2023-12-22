@@ -1,0 +1,34 @@
+.additional-products {
+  &__title {
+
+  }
+
+  &__wrapper {}
+
+  &__list {}
+
+  &__item {}
+
+  &__subtitle {
+    line-height: 16px;
+  }
+
+  &__inner {
+    line-height: 14px;
+  }
+
+  &__text {}
+
+  &__price {}
+
+  &__button {}
+
+  &__presents-wrapper {}
+
+  &__presents-text {
+    color: $white-color;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
