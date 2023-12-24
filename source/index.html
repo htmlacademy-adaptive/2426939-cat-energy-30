@@ -7,47 +7,46 @@
   <link rel="icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <title>Кэт энерджи</title>
+  <title>Главная</title>
 </head>
 
-<body class="page_body">
+<body class="page__body">
   <header class="header">
-    <a href="index.html" class="header__logo">
-      <picture>
-        <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img src="images/logo-mobile.svg" class="header__logo-image" width="33" height="38" alt="Логогит Кэт энерджи">
-      </picture>
-      <picture>
-        <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-desktop.svg" width="118"
-          height="21">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101"
-          height="18">
-        <img src="images/logo-text-mobile.svg" class="header__logo-text" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="container">
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a href="index.html" class="navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a href="catalog.html" class="navigation__link">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a href="form.html" class="navigation__link">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="main-container">
-    <section class="hero">
-      <div class="container">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
+            height="59">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <img src="images/logo-mobile.svg" class="header__logo-image" width="33" height="38" alt="Логогит Кэт энерджи">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-desktop.svg" width="118"
+            height="21">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101"
+            height="18">
+          <img src="images/logo-text-mobile.svg" class="header__logo-text" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="container">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--current">
+              <a href="index.html" class="navigation__link navigation__link--color">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="catalog.html" class="navigation__link navigation__link--color">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a href="form.html" class="navigation__link navigation__link--color">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
         <div class="hero__wrapper">
           <h1 class="hero__title title">Функциональное питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
@@ -61,8 +60,10 @@
           <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270"
             alt="Еда для кота со вкусом курицы на 500 грамм" class="hero__image">
         </picture>
-      </div>
-    </section>
+      </section>
+    </div>
+  </header>
+  <main class="main-container">
     <section class="service">
       <h2 class="visually-hidden">Услуги</h2>
       <div class="container">
@@ -70,7 +71,7 @@
           <li class="service__item">
             <div class="service__inner">
               <div class="service__figure service__figure--image-1"></div>
-              <h3 class="service__title">Похудение</h3>
+              <h3 class="service__title title">Похудение</h3>
             </div>
             <p class="service__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям?
@@ -128,22 +129,20 @@
           без изнуряющих тренировок! При этом он не менял своих
           привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="example__stats">
-          <dl class="example__list">
-            <dt class="example__description">снижение веса</dt>
-            <dd class="example__number">5 кг</dd>
-            <dt class="example__description">затрачено времени</dt>
-            <dd class="example__number">60 ДНЕЙ</dd>
-            <dt class="example__description">затрачено времени</dt>
-            <dd class="example__price">15 000 РУБ</dd>
-          </dl>
+          <div class="example__list">
+            <span class="example__description">снижение веса</span>
+            <span class="example__number">5 кг</span>
+            <span class="example__description">затрачено времени</span>
+            <span class="example__number">60 ДНЕЙ</span>
+          </div>
+          <span class="example__price">Затраты на питание: 15 000 РУБ.</span>
         </div>
         <div class="example__slider">
           <picture>
             <source type="image/png" media="(min-width:1280px)"
               srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
             <source type="image/png" media="(min-width:768px)"
-              srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560"
-              height="512">
+              srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
             <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Жирный кот"
               class="example__image example__image--before" width="280" height="256">
           </picture>
@@ -190,19 +189,19 @@
         <img src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
       </picture>
     </a>
-    <ul class="social-list">
-      <li class="social-item">
-        <a href="https://vk.com/htmlacademy" class="social-link">
+    <ul class="social">
+      <li class="social__item">
+        <a href="https://vk.com/htmlacademy" class="social__link">
           <span class="visually-hidden">ВКонтакте.</span>
         </a>
       </li>
-      <li class="social-item">
-        <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+      <li class="social__item">
+        <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
-      <li class="social-item">
-        <a href="https://t.me/htmlacademy" class="social-link">
+      <li class="social__item">
+        <a href="https://t.me/htmlacademy" class="social__link">
           <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>

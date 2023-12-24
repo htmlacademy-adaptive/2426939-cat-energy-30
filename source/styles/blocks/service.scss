@@ -1,0 +1,32 @@
+.service {
+  &__list {}
+
+  &__item {
+    background-color: $gb-basic-grey;
+  }
+
+  &__inner {}
+
+  &__figure {}
+
+  &__figure--image-1 {}
+
+  &__title {
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+
+  &__description {}
+
+  &__link {
+    color: $black-color;
+    font-family: $oswald-font;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__figure--image-2 {}
+}
