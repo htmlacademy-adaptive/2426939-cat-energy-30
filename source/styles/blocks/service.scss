@@ -1,32 +1,58 @@
-.service {
-  &__list {}
+.service {}
 
-  &__item {
-    background-color: $gb-basic-grey;
+.service__list {}
+
+.service__item {
+  background-color: $gb-basic-grey;
+}
+
+.service__inner {}
+
+.service__figure {
+  width: 67px;
+  height: 50px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
   }
 
-  &__inner {}
-
-  &__figure {}
-
-  &__figure--image-1 {}
-
-  &__title {
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
   }
+}
 
-  &__description {}
+.service__figure--image-1 {
+  background-image: url("../../images/icons/stack.svg#cat-slim");
+}
 
-  &__link {
-    color: $black-color;
-    font-family: $oswald-font;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
+.service__figure--image-2 {
+  background-image: url("../../images/icons/stack.svg#cat-pro");
+}
+
+.service__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.service__description {}
+
+.service__link {
+  color: $black-color;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 10px;
+    background-image: url("../../images/icons/stack.svg#arrow");
   }
-
-  &__figure--image-2 {}
 }

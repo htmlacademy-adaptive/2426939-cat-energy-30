@@ -1,21 +1,21 @@
-.navigation {
-  &__toggle {}
+.navigation {}
 
-  &__list {}
+.navigation__toggle {}
 
-  &__item {}
+.navigation__list {}
 
-  &__item--current {}
+.navigation__item {}
 
-  &__link {
-    color: $black-color;
-    font-family: $oswald-font;
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    &--color {
-      color:$white-color;
-    }
+.navigation__item--current {}
+
+.navigation__link {
+  color: $black-color;
+  font-family: $oswald-font;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  &--color {
+    color:$white-color;
   }
 }

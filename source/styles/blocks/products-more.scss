@@ -1,16 +1,16 @@
-.products-more {
-  &__button {}
+.products-more {}
 
-  &__title {}
+.products-more__button {}
 
-  &__text {
-    font-size: 12px;
-    line-height: 16px;
-  }
+.products-more__title {}
 
-  &__link {
-    color: $primary-color;
-    background-color: $gb-basic-grey;
-    text-transform: uppercase;
-  }
+.products-more__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.products-more__link {
+  color: $primary-color;
+  background-color: $gb-basic-grey;
+  text-transform: uppercase;
 }

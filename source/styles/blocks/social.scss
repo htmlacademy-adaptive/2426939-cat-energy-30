@@ -1,5 +1,29 @@
 .social {
-  &__item {}
-
-  &__link {}
+  display: flex;
+  list-style: none;
 }
+
+.social__item {}
+
+.social__link {
+  display: block;
+  color: $grey-color;
+  fill: currentColor;
+  text-decoration: none;
+
+  &--vkontakte {}
+
+  &--youtube {}
+
+  &--telegram {}
+
+  &:hover {
+  fill: $bg-basic-green;
+  }
+
+  &:active {
+  fill: $bg-basic-green;
+  opacity: 0.3;
+  }
+}
+

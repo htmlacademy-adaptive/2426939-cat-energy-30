@@ -1,15 +1,15 @@
-.map-contacts {
-  &__text {
-    color: $black-color;
-    font-family: $oswald-font;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.map-contacts {}
 
-  &__info {
-    line-height: 20px;
-  }
-
-  &__address {}
+.map-contacts__text {
+  color: $black-color;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
+
+.map-contacts__info {
+  line-height: 20px;
+}
+
+.map-contacts__address {}
