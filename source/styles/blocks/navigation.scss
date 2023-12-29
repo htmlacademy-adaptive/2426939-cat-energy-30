@@ -11,11 +11,24 @@
 .navigation__link {
   color: $black-color;
   font-family: $oswald-font;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &--color {
-    color:$white-color;
+    @media (min-width: 1280px) {
+      color: $white-color;
+    }
   }
 }

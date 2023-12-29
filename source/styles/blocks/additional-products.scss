@@ -10,10 +10,18 @@
 
 .additional-products__inner {
   line-height: 14px;
+
+  @media (min-width: 768px) {
+    line-height: 20px;
+  }
 }
 
 .additional-products__subtitle {
   line-height: 16px;
+
+  @media (min-width: 768px) {
+    line-height: 20px;
+  }
 }
 
 .additional-products__text {}
