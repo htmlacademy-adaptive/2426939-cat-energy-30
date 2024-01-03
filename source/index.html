@@ -13,19 +13,19 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <a href="index.html" class="header__logo">
+      <a href="index.html" class="header__logo logo">
         <picture>
           <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
             height="59">
           <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-          <img src="images/logo-mobile.svg" class="header__logo-image" width="33" height="38" alt="Логогит Кэт энерджи">
+          <img src="images/logo-mobile.svg" class="logo__image" width="33" height="38" alt="Логогит Кэт энерджи">
         </picture>
         <picture>
-          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-desktop.svg" width="118"
+          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-mobile.svg" width="118"
             height="21">
-          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101"
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-mobile.svg" width="101"
             height="18">
-          <img src="images/logo-text-mobile.svg" class="header__logo-text" width="101" height="18" alt="Cat Energy">
+          <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
         </picture>
       </a>
       <nav class="navigation">
@@ -78,18 +78,18 @@
               Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.
             </p>
-            <a href="" class="service__link">Каталог slim</a>
+            <a href="catalog.html" class="service__link">Каталог slim</a>
           </li>
           <li class="service__item">
             <div class="service__inner">
               <div class="service__figure service__figure--image-2"></div>
-              <h3 class="service__title">набор массы</h3>
+              <h3 class="service__title title">набор массы</h3>
             </div>
             <p class="service__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
-            <a href="" class="service__link">каталог pro</a>
+            <a href="catalog.html" class="service__link">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -182,36 +182,47 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__link" href="index.html">
+    <a class="footer__link logo" href="index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/footer-logo.svg" width="128" height="24">
         <source type="image/svg+xml" media="(min-width:768px)" srcset="images/footer-logo.svg" width="128" height="24">
-        <img src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
+        <img class="logo__text" src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
       </picture>
     </a>
     <ul class="social">
       <li class="social__item">
-        <a href="https://vk.com/htmlacademy" class="social__link">
+        <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
+          <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#vkontakte"></use>
+          </svg>
           <span class="visually-hidden">ВКонтакте.</span>
         </a>
       </li>
       <li class="social__item">
-        <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">
+        <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
+          <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#youtube"></use>
+          </svg>
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
       <li class="social__item">
-        <a href="https://t.me/htmlacademy" class="social__link">
+        <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
+          <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#telegram"></use>
+          </svg>
           <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>
     </ul>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="copyright__text">HTML Academy</p>
+    <div class="footer__copyright copyright social">
+      <a class="copyright__link social__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
       </a>
-      <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="" alt="Логотип Html Academy" width="27" height="34">
+      <a class="copyright__link social__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="social__image" width="27" height="34" aria-hidden="true" focusable="false">
+          <use href="images/icons/stack.svg#logo-html-academy"></use>
+        </svg>
       </a>
     </div>
   </footer>

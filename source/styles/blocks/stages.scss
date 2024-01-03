@@ -1,23 +1,39 @@
-.stages {
-  &__title {}
+.stages {}
 
-  &__list {}
+.stages__title {}
 
-  &__item {}
+.stages__list {}
 
-  &__icon {}
+.stages__item {}
 
-  &__icon--leaf {}
+.stages__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
 
-  &__text {}
-
-  &__number {}
-
-  &__icon--boil-water {
-    
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
   }
+}
 
-  &__icon--knife-fork {}
+.stages__icon--leaf {
+  background-image: url("../../images/icons/stack.svg#leaf");
+}
 
-  &__icon--alarm {}
+.stages__text {}
+
+.stages__number {}
+
+.stages__icon--boil-water {
+  background-image: url("../../images/icons/stack.svg#boil-water");
+}
+
+.stages__icon--knife-fork {
+  background-image: url("../../images/icons/stack.svg#eat");
+}
+
+.stages__icon--alarm {
+  background-image: url("../../images/icons/stack.svg#clock");
 }

@@ -1,9 +1,9 @@
-.copyright {
-  &__link {}
+.copyright {}
 
-  &__text {
-    line-height: 20px;
-  }
+.copyright __link {}
 
-  &__link--image {}
+.copyright__text {
+  line-height: 20px;
 }
+
+.copyright__link--image {}

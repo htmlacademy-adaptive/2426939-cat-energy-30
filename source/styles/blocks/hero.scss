@@ -1,17 +1,32 @@
 .hero {
-  &__wrapper {}
 
-  &__title {
-    color: $white-color;
-  }
 
-  &__text {
-    color: $white-color;
-  }
-
-  &__button {}
-
-  &__image {}
-
-  &__title--color {}
 }
+.hero__wrapper {}
+
+.hero__title {
+  color: $white-color;
+  @media (min-width:768px) {
+    color: $black-color
+  }
+}
+
+
+.hero__text {
+  font-family: $oswald-font;
+  margin: 0;
+  line-height: 14px;
+  color: $white-color;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    color: $black-color;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.hero__button {}
+
+.hero__image {}
+

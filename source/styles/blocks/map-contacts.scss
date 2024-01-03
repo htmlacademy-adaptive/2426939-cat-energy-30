@@ -1,15 +1,20 @@
-.map-contacts {
-  &__text {
-    color: $black-color;
-    font-family: $oswald-font;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.map-contacts {}
 
-  &__info {
-    line-height: 20px;
-  }
+.map-contacts__text {
+  color: $ligher-black-color;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 
-  &__address {}
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
+
+.map-contacts__info {
+  line-height: 20px;
+}
+
+.map-contacts__address {}

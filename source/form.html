@@ -12,38 +12,41 @@
 
 <body class="page__body">
   <header class="header">
-    <a href="index.html" class="header__logo">
-      <picture>
-        <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70" height="59">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img src="images/logo-mobile.svg" class="header__logo-image" width="33" height="38" alt="Логогит Кэт энерджи">
-      </picture>
-      <picture>
-        <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-desktop.svg" width="118"
-          height="21">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101"
-          height="18">
-        <img src="images/logo-text-mobile.svg" class="header__logo-text" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="container">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="index.html" class="navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item navigation__item--current">
-            <a href="catalog.html" class="navigation__link">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a href="form.html" class="navigation__link">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="header__logo logo">
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
+            height="59">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <img src="images/logo-mobile.svg" class="logo__image" width="33" height="38" alt="Логогит Кэт энерджи">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-mobile.svg" width="118"
+            height="21">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-mobile.svg" width="101"
+            height="18">
+          <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="container">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--current">
+              <a href="index.html" class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="catalog.html" class="navigation__link">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a href="form.html" class="navigation__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <section class="questionnaire">
@@ -135,36 +138,47 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__link" href="index.html">
+    <a class="footer__link logo" href="index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/footer-logo.svg" width="128" height="24">
         <source type="image/svg+xml" media="(min-width:768px)" srcset="images/footer-logo.svg" width="128" height="24">
-        <img src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
+        <img class="logo__text" src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
       </picture>
     </a>
     <ul class="social">
       <li class="social__item">
-        <a href="https://vk.com/htmlacademy" class="social__link">
+        <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
+          <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#vkontakte"></use>
+          </svg>
           <span class="visually-hidden">ВКонтакте.</span>
         </a>
       </li>
       <li class="social__item">
-        <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">
+        <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
+          <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#youtube"></use>
+          </svg>
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
       <li class="social__item">
-        <a href="https://t.me/htmlacademy" class="social__link">
+        <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
+          <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#telegram"></use>
+          </svg>
           <span class="visually-hidden">Телеграм.</span>
         </a>
       </li>
     </ul>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="copyright__text">HTML Academy</p>
+    <div class="footer__copyright copyright social">
+      <a class="copyright__link social__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
       </a>
-      <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="" alt="Логотип Html Academy" width="27" height="34">
+      <a class="copyright__link social__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="social__image" width="27" height="34" aria-hidden="true" focusable="false">
+          <use href="images/icons/stack.svg#logo-html-academy"></use>
+        </svg>
       </a>
     </div>
   </footer>

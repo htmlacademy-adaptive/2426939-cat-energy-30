@@ -1,43 +1,57 @@
 .example {
   font-family: $oswald-font;
   color: $black-color;
-
-  &__title {}
-
-  &__text {
-    font-family: "Lato", sans-serif;
-    color: $primary-color;
-  }
-
-  &__stats {}
-
-  &__list {}
-
-  &__description {
-    font-size: 12px;
-    line-height: 100%;
-  }
-
-  &__number {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  &__price {
-    text-align: center;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  &__slider {}
-
-  &__image {}
-
-  &__image--before {}
-
-  &__wrapper-button {}
-
-  &__button {}
-
-  &__image--after {}
 }
+
+.example__title {}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  color: $primary-color;
+}
+
+.example__stats {}
+
+.example__list {}
+
+.example__description {
+  font-size: 12px;
+  line-height: 100%;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__price {
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.example__slider {}
+
+.example__image {}
+
+.example__image--before {}
+
+.example__wrapper-button {}
+
+.example__button {}
+
+.example__image--after {}

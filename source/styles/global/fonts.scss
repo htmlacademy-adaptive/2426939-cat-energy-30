@@ -1,3 +1,20 @@
 /* здесь подключите шрифты*/
-@include font-face("Lato", url("../../fonts/lato/lato-regular.woff2"));
-@include font-face("Oswald", url("../../fonts/oswald/oswaldregular.woff2"));
+// @include font-face("Lato", url("../../fonts/lato/lato-regular.woff2"));
+// @include font-face("Oswald", url("../../fonts/oswald/oswaldregular.woff2"));
+
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/Oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}

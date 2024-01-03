@@ -1,26 +1,26 @@
-.questionnaire {
-  &_discription {
-    color: $black-color;
-    font-family: $oswald-font;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    margin: 0;
-  }
+.questionnaire {}
 
-  &__title {}
+.questionnaire__discription {
+  color: $black-color;
+  font-family: $oswald-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-  &__form {}
+.questionnaire__title {}
 
-  &__form-wrapper {}
+.questionnaire__form {}
 
-  &__field {}
+.questionnaire__form-wrapper {}
 
-  &__button {}
+.questionnaire__field {}
 
-  &__text {
-    color: $black-color;
-    text-align: center;
-    line-height: 16px;
-  }
+.questionnaire__button {}
+
+.questionnaire__text {
+  color: $black-color;
+  text-align: center;
+  line-height: 16px;
 }
