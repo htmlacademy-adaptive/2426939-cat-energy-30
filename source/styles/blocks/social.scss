@@ -1,5 +1,45 @@
 .social {
-  &__item {}
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  border-top: 1px solid $darker-white-color;
+  border-bottom: 1px solid $darker-white-color;
 
-  &__link {}
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
+
+.social__wrapper {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.social__item {}
+
+.social__link {
+  display: block;
+  color: $primary-color;
+  fill: currentColor;
+  text-decoration: none;
+
+  &--vkontakte {}
+
+  &--youtube {}
+
+  &--telegram {}
+
+  &:hover {
+    fill: $bg-basic-green;
+  }
+
+  &:active {
+    fill: $bg-basic-green;
+    opacity: 0.3;
+  }
+}
+

@@ -1,43 +1,140 @@
 .example {
+  position: relative;
   font-family: $oswald-font;
   color: $black-color;
+  background-color: $bg-grey;
+  padding: 20px 25px 40px;
 
-  &__title {}
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background: linear-gradient(180deg, $white-color 50%, $bg-darker-grey 50%);
 
-  &__text {
-    font-family: "Lato", sans-serif;
-    color: $primary-color;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 768px;
+      height: 1px;
+      background-color: $bg-darker-grey;
+    }
   }
 
-  &__stats {}
-
-  &__list {}
-
-  &__description {
-    font-size: 12px;
-    line-height: 100%;
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 75px 0;
+    background: linear-gradient(180deg, $white-color 30%, $bg-darker-grey 30%);
   }
-
-  &__number {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  &__price {
-    text-align: center;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  &__slider {}
-
-  &__image {}
-
-  &__image--before {}
-
-  &__wrapper-button {}
-
-  &__button {}
-
-  &__image--after {}
 }
+
+.example__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__item {
+  width: 124px;
+  text-align: center;
+}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  color: $primary-color;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
+}
+
+.example__stats {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.example__list {
+  display: flex;
+  gap: 32px;
+}
+
+.example__description {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 100%;
+  color: $primary-color;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.example__number {
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__price {
+  display: flex;
+  line-height: 20px;
+  text-transform: uppercase;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    font-size: 20px;
+    margin-top: 11px;
+    text-align: end;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    justify-content: start;
+  }
+}
+
+.example__slider {}
+
+.example__image {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    top: 53px;
+  }
+
+}
+
+.example__image--before {}
+
+.example__wrapper-button {}
+
+.example__button {}
+
+.example__image--after {}

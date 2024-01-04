@@ -1,32 +1,121 @@
 .service {
-  &__list {}
-
-  &__item {
-    background-color: $gb-basic-grey;
-  }
-
-  &__inner {}
-
-  &__figure {}
-
-  &__figure--image-1 {}
-
-  &__title {
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-  }
-
-  &__description {}
-
-  &__link {
+  @media (min-width: $tablet-width) {
     color: $black-color;
-    font-family: $oswald-font;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
+  }
+}
+
+.service__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
   }
 
-  &__figure--image-2 {}
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0;
+    gap: 80px;
+  }
+}
+
+.service__item {
+  padding: 21px 31px 18px 20px;
+  background-color: $gb-basic-grey;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 57px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-top: 41px;
+  }
+}
+
+.service__inner {
+  display: flex;
+}
+
+.service__figure {
+  width: 67px;
+  height: 50px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 200px;
+    height: 211px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.service__figure--image-1 {
+  background-image: url("../../images/icons/stack.svg#cat-slim");
+}
+
+.service__figure--image-2 {
+  background-image: url("../../images/icons/stack.svg#cat-pro");
+}
+
+.service__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+}
+
+.service__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
+}
+
+.service__link {
+  color: $black-color;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 10px;
+    background-image: url("../../images/icons/stack.svg#arrow");
+  }
 }

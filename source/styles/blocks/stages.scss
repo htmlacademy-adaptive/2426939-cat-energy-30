@@ -1,23 +1,83 @@
 .stages {
-  &__title {}
+  padding: 20px;
+  padding-bottom: 49px;
+}
 
-  &__list {}
+.stages__title {
+  margin-bottom: 40px;
 
-  &__item {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+}
 
-  &__icon {}
+.stages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 20px;
 
-  &__icon--leaf {}
-
-  &__text {}
-
-  &__number {}
-
-  &__icon--boil-water {
-    
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 230px 230px;
+    gap: 37px 154px;
   }
 
-  &__icon--knife-fork {}
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 69px 95px;
+  }
+}
 
-  &__icon--alarm {}
+.stages__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 80px 1fr;
+  }
+
+
+}
+
+.stages__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    grid-column: 1/3;
+  }
+}
+
+.stages__icon--leaf {
+  background-image: url("../../images/icons/stack.svg#leaf");
+}
+
+.stages__text {
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    width: 224px;
+  }
+}
+
+.stages__number {
+  display: none;
+}
+
+.stages__icon--boil-water {
+  background-image: url("../../images/icons/stack.svg#boil-water");
+}
+
+.stages__icon--knife-fork {
+  background-image: url("../../images/icons/stack.svg#eat");
+}
+
+.stages__icon--alarm {
+  background-image: url("../../images/icons/stack.svg#clock");
 }

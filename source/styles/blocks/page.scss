@@ -1,9 +1,23 @@
-.page {
+.page {}
 
-  &__body {
-    font-family: "Lato", sans-serif;
-    color: $primary-color;
-    font-size: 14px;
-    line-height: 18px;
+.page__body {
+  font-family: "Lato", sans-serif;
+  color: $primary-color;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }

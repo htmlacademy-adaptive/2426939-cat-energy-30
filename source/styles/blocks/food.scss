@@ -1,5 +1,13 @@
 .food {
-  &__term {}
+  font-size: 12px;
+  line-height: 16px;
 
-  &__definition {}
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
+
+.food__term {}
+
+.food__definition {}

@@ -1,17 +1,36 @@
 .hero {
-  &__wrapper {}
+  background: linear-gradient(180deg, $bg-basic-green 60%, $white-color 40%);
 
-  &__title {
-    color: $white-color;
+  @media (min-width: $tablet-width) {
+    background: none;
   }
-
-  &__text {
-    color: $white-color;
-  }
-
-  &__button {}
-
-  &__image {}
-
-  &__title--color {}
 }
+.hero__wrapper {}
+
+.hero__title {
+  color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    color: $black-color;
+  }
+}
+
+
+.hero__text {
+  font-family: $oswald-font;
+  margin: 0;
+  line-height: 14px;
+  color: $white-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $black-color;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.hero__button {}
+
+.hero__image {}
+
