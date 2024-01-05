@@ -8,7 +8,11 @@
   }
 }
 
-.navigation__toggle {}
+.navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 .navigation__list {
   margin: 0;

@@ -1,4 +1,4 @@
-.header {
+.header.header__container {
   @media (min-width: $desktop-width) {
     background: linear-gradient(90deg, $white-color 50%, $bg-basic-green 50%);
   }
@@ -11,9 +11,26 @@
 }
 
 .header__wrapper {
+  margin-bottom: 14px;
+  padding-top: 13px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-top: 55px;
+  }
+
+  &--indent {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 110px;
+    }
   }
 }
 

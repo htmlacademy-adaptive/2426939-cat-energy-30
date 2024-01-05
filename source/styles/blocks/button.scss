@@ -9,4 +9,9 @@
   background-color: $bg-basic-green;
   text-decoration: none;
   border: none;
+  padding: 10px 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 8px;
+  }
 }

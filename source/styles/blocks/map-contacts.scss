@@ -11,6 +11,14 @@
 .map__contacts {
   padding: 20px 0;
 
+  &--color {
+    background-color: $gb-basic-grey;
+
+    @media (min-width: $desktop-width) {
+      background-color: $white-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 163px 157px;
     gap: 308px;
@@ -26,6 +34,16 @@
     top: 95px;
   }
 }
+
+.map__container {
+  background-color: $gb-basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white-color;
+  }
+}
+
+
 
 .map-contacts__text {
   color: $ligher-black-color;

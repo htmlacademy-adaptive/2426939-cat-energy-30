@@ -13,39 +13,42 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <a href="index.html" class="header__logo logo">
-        <picture>
-          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
-            height="59">
-          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-          <img src="images/logo-mobile.svg" class="logo__image" width="33" height="38" alt="Логогит Кэт энерджи">
-        </picture>
-        <picture>
-          <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-mobile.svg" width="118"
-            height="21">
-          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-mobile.svg" width="101"
-            height="18">
-          <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
-        </picture>
-      </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="container">
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--current">
-              <a href="index.html" class="navigation__link">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a href="catalog.html" class="navigation__link">Каталог продукции</a>
-            </li>
-            <li class="navigation__item">
-              <a href="form.html" class="navigation__link">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo logo">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
+              height="59">
+            <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60"
+              height="50">
+            <img src="images/logo-mobile.svg" class="logo__image" width="33" height="38" alt="Логогит Кэт энерджи">
+          </picture>
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-text-mobile.svg" width="118"
+              height="21">
+            <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-mobile.svg" width="101"
+              height="18">
+            <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
+          </picture>
+        </a>
+        <nav class="navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="container">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--current">
+                <a href="index.html" class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a href="catalog.html" class="navigation__link">Каталог продукции</a>
+              </li>
+              <li class="navigation__item">
+                <a href="form.html" class="navigation__link">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="main-container">
