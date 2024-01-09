@@ -32,25 +32,7 @@
 }
 
 .catalog__item {
-  position: relative;
-
   @media (min-width: $tablet-width) {
     padding: 0 37px 40px 37px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    width: 320px;
-    height: 1px;
-    background-color: $special-grey;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      display: none;
-    }
   }
 }

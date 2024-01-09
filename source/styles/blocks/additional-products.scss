@@ -115,13 +115,18 @@
 .additional-products__presents-wrapper {
   background-color: rgba($bg-basic-green, 0.85);
   position: relative;
-  width: 280px;
+  width: 100%;
   min-height: 290px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     display: flex;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 245px;
     margin-bottom: 75px;
   }
 
