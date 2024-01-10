@@ -2,6 +2,9 @@
 
 .map__container {}
 
-.map__image {}
+.map__image {
+  width: 100%;
+  object-fit: cover;
+}
 
 .map__contacts {}

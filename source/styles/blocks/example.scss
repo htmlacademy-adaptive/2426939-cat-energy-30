@@ -3,7 +3,7 @@
   font-family: $oswald-font;
   color: $black-color;
   background-color: $bg-grey;
-  padding: 20px 25px 40px;
+  padding: 20px 0 40px 0;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background: linear-gradient(180deg, $white-color 50%, $bg-darker-grey 50%);

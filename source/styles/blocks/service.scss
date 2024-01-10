@@ -40,6 +40,10 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     padding-top: 41px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
