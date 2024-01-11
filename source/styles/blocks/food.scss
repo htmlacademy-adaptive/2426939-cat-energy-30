@@ -1,7 +1,6 @@
 .food {
   font-size: 12px;
   line-height: 16px;
-<<<<<<< HEAD
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -30,15 +29,5 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey-2;
-=======
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 20px;
->>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
   }
 }
-
-.food__term {}
-
-.food__definition {}

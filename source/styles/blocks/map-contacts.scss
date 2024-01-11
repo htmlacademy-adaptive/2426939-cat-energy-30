@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .map {
   position: relative;
 }
@@ -45,23 +44,16 @@
 }
 
 
-=======
-.map-contacts {}
->>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
 
 .map-contacts__text {
   color: $ligher-black-color;
   font-family: $oswald-font;
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
-=======
->>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
-<<<<<<< HEAD
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -81,16 +73,4 @@
   @media (min-width: $tablet-width) {
     text-align: end;
   }
-=======
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 26px;
-  }
->>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
 }
-
-.map-contacts__info {
-  line-height: 20px;
-}
-
-.map-contacts__address {}

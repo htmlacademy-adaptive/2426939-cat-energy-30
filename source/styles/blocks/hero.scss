@@ -1,27 +1,17 @@
 .hero {
-<<<<<<< HEAD
   background: linear-gradient(180deg, $bg-basic-green 60%, $white-color 40%);
 
   @media (min-width: $tablet-width) {
     background: none;
   }
-=======
-
-
->>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
 }
 .hero__wrapper {}
 
 .hero__title {
   color: $white-color;
-<<<<<<< HEAD
 
   @media (min-width: $tablet-width) {
     color: $black-color;
-=======
-  @media (min-width:768px) {
-    color: $black-color
->>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
   }
 }
 
@@ -33,11 +23,7 @@
   color: $white-color;
   text-transform: uppercase;
 
-<<<<<<< HEAD
   @media (min-width: $tablet-width) {
-=======
-  @media (min-width: 768px) {
->>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
     color: $black-color;
     font-size: 20px;
     line-height: 20px;
