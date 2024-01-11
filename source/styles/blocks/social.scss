@@ -1,5 +1,6 @@
 .social {
   display: flex;
+<<<<<<< HEAD
   flex-wrap: wrap;
   gap: 24px;
   list-style: none;
@@ -19,11 +20,20 @@
   margin: 20px 0;
 }
 
+=======
+  list-style: none;
+}
+
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
 .social__item {}
 
 .social__link {
   display: block;
+<<<<<<< HEAD
   color: $primary-color;
+=======
+  color: $grey-color;
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
   fill: currentColor;
   text-decoration: none;
 
@@ -34,12 +44,21 @@
   &--telegram {}
 
   &:hover {
+<<<<<<< HEAD
     fill: $bg-basic-green;
   }
 
   &:active {
     fill: $bg-basic-green;
     opacity: 0.3;
+=======
+  fill: $bg-basic-green;
+  }
+
+  &:active {
+  fill: $bg-basic-green;
+  opacity: 0.3;
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
   }
 }
 

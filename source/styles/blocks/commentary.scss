@@ -1,5 +1,6 @@
 .commentary {}
 
+<<<<<<< HEAD
 .commentary__title {
   margin-bottom: 38px;
 
@@ -30,4 +31,12 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
   }
+=======
+.commentary__title {}
+
+.commentary__text {
+  font-family: $oswald-font;
+  font-size: 16px;
+  text-transform: uppercase;
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
 }

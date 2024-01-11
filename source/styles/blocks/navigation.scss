@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navigation {
   @media (min-width: $tablet-width) {
     width: 436px;
@@ -27,6 +28,16 @@
 
 .navigation__item {}
 
+=======
+.navigation {}
+
+.navigation__toggle {}
+
+.navigation__list {}
+
+.navigation__item {}
+
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
 .navigation__item--current {}
 
 .navigation__link {
@@ -37,18 +48,30 @@
   text-transform: uppercase;
   text-decoration: none;
 
+<<<<<<< HEAD
   @media (min-width: $tablet-width) {
+=======
+  @media (min-width: 768px) {
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
     font-size: 18px;
     line-height: 24px;
   }
 
+<<<<<<< HEAD
   @media (min-width: $desktop-width) {
+=======
+  @media (min-width: 1280px) {
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
     font-size: 20px;
     line-height: 20px;
   }
 
   &--color {
+<<<<<<< HEAD
     @media (min-width: $desktop-width) {
+=======
+    @media (min-width: 1280px) {
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
       color: $white-color;
     }
   }

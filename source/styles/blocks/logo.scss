@@ -1,5 +1,6 @@
 
 .logo {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +9,11 @@
     opacity: 0.8;
   }
 
+=======
+  &:hover {
+    opacity: 0.8;
+  }
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
   &:active {
     opacity: 0.6;
   }
@@ -15,6 +21,10 @@
 
 .logo__image {}
 
+<<<<<<< HEAD
 .logo__text {
   margin: 0 auto;
 }
+=======
+.logo__text {}
+>>>>>>> 8003da14499c40e82ad2edfa479ae441270dc19d
