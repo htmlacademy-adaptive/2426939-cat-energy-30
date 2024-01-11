@@ -1,9 +1,43 @@
 .additionally {}
 
-.additionally__title {}
+.additionally__wrapper {
+  display: grid;
 
-.additionally__label {}
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px 60px;
+    align-items: center;
+  }
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 65px 80px;
+  }
+}
+
+.additionally__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.additionally__label {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
 .additionally__input {}
 
 .additionally__ckeckboxmark {}

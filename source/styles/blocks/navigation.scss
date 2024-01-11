@@ -1,8 +1,29 @@
-.navigation {}
+.navigation {
+  @media (min-width: $tablet-width) {
+    width: 436px;
+  }
 
-.navigation__toggle {}
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
 
-.navigation__list {}
+.navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 31px;
+  }
+}
 
 .navigation__item {}
 
@@ -16,18 +37,18 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
   }
 
   &--color {
-    @media (min-width: 1280px) {
+    @media (min-width: $desktop-width) {
       color: $white-color;
     }
   }

@@ -1,4 +1,8 @@
 .text-input {
+  border: 1px solid $special-grey-3;
+  flex-grow: 1;
+  padding: 14px 0 13px 15px;
+
   &::placeholder {
     color: $primary-color;
     font-family: $oswald-font;

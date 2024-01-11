@@ -1,25 +1,67 @@
 .service {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     color: $black-color;
   }
 }
 
-.service__list {}
+.service__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 
-.service__item {
-  background-color: $gb-basic-grey;
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0;
+    gap: 80px;
+  }
 }
 
-.service__inner {}
+.service__item {
+  padding: 21px 31px 18px 20px;
+  background-color: $gb-basic-grey;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 57px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-top: 41px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.service__inner {
+  display: flex;
+}
 
 .service__figure {
   width: 67px;
   height: 50px;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 200px;
     height: 211px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,14 +83,24 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
   }
 }
 
-.service__description {}
+.service__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
+}
 
 .service__link {
   color: $black-color;
@@ -57,6 +109,11 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &::after {
     content: "";

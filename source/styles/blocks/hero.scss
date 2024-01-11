@@ -1,13 +1,17 @@
 .hero {
+  background: linear-gradient(180deg, $bg-basic-green 60%, $white-color 40%);
 
-
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }
 .hero__wrapper {}
 
 .hero__title {
   color: $white-color;
-  @media (min-width:768px) {
-    color: $black-color
+
+  @media (min-width: $tablet-width) {
+    color: $black-color;
   }
 }
 
@@ -19,7 +23,7 @@
   color: $white-color;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     color: $black-color;
     font-size: 20px;
     line-height: 20px;

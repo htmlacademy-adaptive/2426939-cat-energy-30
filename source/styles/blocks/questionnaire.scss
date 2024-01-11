@@ -1,4 +1,6 @@
-.questionnaire {}
+.questionnaire {
+
+}
 
 .questionnaire__discription {
   color: $black-color;
@@ -7,20 +9,73 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
 }
 
-.questionnaire__title {}
+.questionnaire__title {
+  margin-bottom: 37px;
 
-.questionnaire__form {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+}
 
-.questionnaire__form-wrapper {}
+.questionnaire__form {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
 
-.questionnaire__field {}
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
 
-.questionnaire__button {}
+.questionnaire__form-wrapper {
+  margin-bottom: 26px;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+}
+
+.questionnaire__field {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.questionnaire__button {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+  }
+}
 
 .questionnaire__text {
   color: $black-color;
   text-align: center;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: start;
+  }
 }

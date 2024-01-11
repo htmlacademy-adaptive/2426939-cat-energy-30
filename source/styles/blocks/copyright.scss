@@ -1,9 +1,38 @@
-.copyright {}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
 
-.copyright __link {}
+.copyright__link {
+  display: block;
+  color: $primary-color;
+  fill: currentColor;
+  text-decoration: none;
+
+  &--vkontakte {}
+
+  &--youtube {}
+
+  &--telegram {}
+
+  &:hover {
+    fill: $bg-basic-green;
+  }
+
+  &:active {
+    fill: $bg-basic-green;
+    opacity: 0.3;
+  }
+
+
+}
 
 .copyright__text {
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }
 
 .copyright__link--image {}

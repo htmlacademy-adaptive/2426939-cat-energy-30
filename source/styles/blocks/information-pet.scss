@@ -1,6 +1,40 @@
-.information-pet {}
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
 
-.information-pet__label {}
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
 
-.information-pet__text {}
+.information__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 14px;
 
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+.information__label {
+  margin-right: 13px;
+}
+
+.information__text {}
+
+.information__title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
