@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 230px 230px;
-    gap: 37px 154px;
+    gap: 134px 179px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,9 +35,9 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 80px 1fr;
+    gap: 31px;
+    position: relative;
   }
-
-
 }
 
 .stages__icon {
@@ -67,6 +67,19 @@
 
 .stages__number {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    top: -35px;
+    right: 0;
+    display: block;
+    color: $gb-basic-grey;
+    text-align: center;
+    font-family: $oswald-font;
+    font-size: 280px;
+    line-height: 100%;
+  }
 }
 
 .stages__icon--boil-water {

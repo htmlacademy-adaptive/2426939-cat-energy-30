@@ -16,6 +16,8 @@
 }
 
 .task__item {
+  position: relative;
+
   :not(:last-child) {
     margin-bottom: 25px;
 
@@ -25,7 +27,16 @@
   }
 }
 
-.task__label {}
+.task__label {
+  padding-left: 45px;
+  cursor: pointer;
 
-.task__input {}
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.task__input:checked ~ .checkmark::after {
+  display: block;
+}
 

@@ -14,4 +14,13 @@
   @media (min-width: $tablet-width) {
     padding: 14px 8px;
   }
+
+  &:hover,
+  &:active {
+    background-color: $bg-basic-green-2;
+  }
+
+  &:active {
+    color: rgba($white-color, 0.3);
+  }
 }

@@ -1,1 +1,36 @@
-.checkmark {}
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $white-color;
+  border: 1px solid $special-grey-2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: none;
+    width: 14px;
+    height: 14px;
+    top: 25%;
+    left: 25%;
+    background-color: $bg-basic-green;
+    border-radius: 50%;
+  }
+
+ 
+
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      left: 28%;
+    }
+  }
+}

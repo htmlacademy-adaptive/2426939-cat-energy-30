@@ -9,4 +9,17 @@
     font-size: 16px;
     text-transform: uppercase;
   }
+
+  &:hover {
+    border-color: $special-grey-2;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid $primary-color;
+  }
+
+  &:invalid {
+    border-color: $error-color;
+  }
 }

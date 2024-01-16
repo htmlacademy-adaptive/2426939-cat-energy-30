@@ -25,6 +25,13 @@
   }
 }
 
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example__title {
   margin-bottom: 40px;
 
@@ -39,7 +46,26 @@
 
 .example__item {
   width: 124px;
+
+  position: relative;
   text-align: center;
+  padding: 15px 5px;
+  border: 1px solid $special-grey-2;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 10px 18px;
+  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   width: 124px;
+  //   height: 56px;
+  //   background-image: url("../../images/icons/stack.svg#weight-back");
+  //   background-repeat: no-repeat;
+
+  // }
 }
 
 .example__text {
@@ -52,7 +78,7 @@
     margin-bottom: 55px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 436px;
     margin-bottom: 69px;
   }
@@ -71,6 +97,11 @@
 .example__list {
   display: flex;
   gap: 32px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__description {
@@ -83,6 +114,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    transform: translateY(50%);
   }
 
   @media (min-width: $desktop-width) {
@@ -90,10 +122,40 @@
   }
 }
 
+.example__description-text {
+  position: absolute;
+  display: inline-flex;
+  background-color: $bg-grey;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  max-width: 70%;
+
+
+  &::before {
+    content: "";
+    margin-right: 10px;
+  }
+
+  &::after {
+    content: "";
+    margin-left: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 90%;
+  }
+}
+
 .example__number {
   display: block;
   font-size: 24px;
   line-height: 24px;
+  margin-left: 0;
+  margin-bottom: 8px;
+  margin: 0 auto;
+  transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -106,12 +168,14 @@
   line-height: 20px;
   text-transform: uppercase;
   justify-content: center;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 20px;
     margin-top: 11px;
     text-align: end;
     flex-direction: row;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,21 +184,86 @@
   }
 }
 
-.example__slider {}
+.example__slider {
+
+}
 
 .example__image {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 0;
-    top: 53px;
-  }
 
+}
+
+.example__slider-images {
+  position: relative;
 }
 
 .example__image--before {}
 
-.example__wrapper-button {}
+.example__wrapper-button {
 
-.example__button {}
+}
+
+.example__button {
+  position: absolute;
+  border: none;
+  z-index: 11;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: $white-color;
+  border: 1px solid $special-grey-4;
+  top: 47%;
+  right: 43%;
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 100px;
+    background-color: $special-grey-4;
+    left: 17px;
+  }
+
+  &::before {
+    top: -100px;
+  }
+
+  &::after {
+    top: 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 57%;
+
+
+    &::before, &::after {
+      height: 236px;
+    }
+
+    &::before {
+      top: -236px;
+    }
+
+    &::after {
+      top: 38px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 46%;
+  }
+}
+
+.example__button-toogle {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../../images/icons/stack.svg#slider-toggle");
+  background-repeat: no-repeat;
+}
 
 .example__image--after {}
