@@ -1,3 +1,7 @@
+.header {
+  position: relative;
+}
+
 .header.header__container {
   @media (min-width: $desktop-width) {
     background: linear-gradient(90deg, $white-color 50%, $bg-basic-green 50%);

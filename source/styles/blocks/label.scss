@@ -2,4 +2,9 @@
   font-family: $oswald-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  &:hover .checkmark,
+  &:hover .ckeckboxmark {
+    border-color: $special-grey-5;
+  }
 }

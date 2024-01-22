@@ -33,13 +33,16 @@
 
   &--telegram {}
 
-  &:hover {
+  &:hover .social__image {
     fill: $bg-basic-green;
   }
 
-  &:active {
+  &:active .social__image {
     fill: $bg-basic-green;
     opacity: 0.3;
   }
 }
 
+.social__image {
+
+}

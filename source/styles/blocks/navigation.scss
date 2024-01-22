@@ -6,10 +6,97 @@
   @media (min-width: $desktop-width) {
     width: 475px;
   }
+
+  &--closed {
+    @media (max-width: $mobile-width) {
+      .navigation__list {
+        display: none;
+      }
+    }
+  }
 }
 
-.navigation__toggle {
-  @media (min-width: $tablet-width) {
+@media (max-width: $mobile-width) {
+  .navigation__toggle {
+    position: absolute;
+    display: block;
+    top: 30px;
+    right: 23px;
+    border: none;
+    background-color: $white-color;
+    cursor: pointer;
+  }
+
+  .navigation--opened {
+    .navigation__list {
+      position: absolute;
+      top: 65px;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background-color: $white-color;
+    }
+
+    .navigation__item {
+      text-align: center;
+      padding: 22px 0 24px 0;
+      border-top: 1px solid $bg-darker-grey;
+    }
+  }
+
+  .navigation--closed .navigation__toggle {
+    width: 24px;
+    height: 2px;
+    background-color: $black-color;
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black-color;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  .navigation--opened {
+    .navigation__toggle {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: $black-color;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
     display: none;
   }
 }
@@ -27,7 +114,31 @@
 
 .navigation__item {}
 
-.navigation__item--current {}
+.navigation__item--current {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      height: 2px;
+      background-color: $bg-basic-green;
+    }
+  }
+}
+
+.navigation__item--color {
+  &.navigation__item--current {
+    @media (min-width: $desktop-width) {
+      &::after {
+        background-color: $white-color;
+      }
+    }
+  }
+}
 
 .navigation__link {
   color: $black-color;
@@ -45,6 +156,11 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
   }
 
   &--color {

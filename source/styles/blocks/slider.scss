@@ -1,0 +1,29 @@
+
+.slider {
+}
+
+.slider__images {
+  position: relative;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 567px;
+  }
+}
+
+.slider__image-wrapper {
+  overflow: hidden;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.slider__image-wrapper--before {
+  z-index: 10;
+}
+
+.slider__image-wrapper--after {
+  clip-path: inset(0 0 0 50%);
+}

@@ -1,17 +1,44 @@
 .hero {
-  background: linear-gradient(180deg, $bg-basic-green 60%, $white-color 40%);
+  position: relative;
+  background-image: linear-gradient(180deg, $bg-basic-green 60%, $white-color 40%), url("../../images/index-background-mobile@1x.png");
+  background-size: 320px 302px, auto;
+  background-position: top center;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 184px;
+  }
 }
-.hero__wrapper {}
+
+.hero__wrapper {
+  padding-top: 27px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
 
 .hero__title {
   color: $white-color;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: $black-color;
+    width: 425px;
+    order: -3;
+    margin-bottom: 40px;
+    margin-left: 90px;
   }
 }
 
@@ -22,15 +49,43 @@
   line-height: 14px;
   color: $white-color;
   text-transform: uppercase;
+  margin-bottom: 29px;
+  order: -2;
+
 
   @media (min-width: $tablet-width) {
     color: $black-color;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
+    margin-left: 90px;
   }
 }
 
-.hero__button {}
+.hero__button {
+  width: 100%;
 
-.hero__image {}
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+    color: $black-color;
+    font-size: 20px;
+    line-height: 20px;
+    order: -1;
+    max-width: 244px;
+    margin-left: 90px;
+  }
+}
+
+.hero__image {
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 418px;
+    top: 0;
+  }
+}
 

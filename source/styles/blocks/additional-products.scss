@@ -8,6 +8,8 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
@@ -18,6 +20,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 87px;
+    align-items: start;
   }
 }
 
@@ -56,7 +60,7 @@
     grid-template-columns: 1fr 1fr 80px 1fr;
     border: none;
     border-bottom: 1px solid $special-grey-2;
-    padding: 25px 0;
+    padding: 15px 0 17px 0;
     align-items: center;
   }
 }
@@ -109,6 +113,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 4/5;
+    padding: 10px 8px;
   }
 }
 
@@ -119,34 +124,39 @@
   min-height: 290px;
   margin-bottom: 35px;
 
+
   @media (min-width: $tablet-width) {
     display: flex;
+    min-height: 200px;
     margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     width: 245px;
-    margin-bottom: 75px;
-  }
-
-
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 78px;
-    height: 80px;
-    background: url("../../images/icons/stack.svg#icon-gift");
-    background-position: 14px;
-    background-repeat: no-repeat;
-    background-size: 78px 80px;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 83px;
-    }
+    margin-bottom: 0;
+    min-height: 288px;
   }
 }
+
+.additional-products__presents-gift {
+  position: absolute;
+  display: block;
+  width: 78px;
+  height: 80px;
+  left: 35%;
+  top: 50px;
+  background: url("../../images/icons/stack.svg#icon-gift");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 80px;
+    height: 83px;
+    left: 15%;
+    top: 30%;
+  }
+}
+
 
 .additional-products__presents-text {
   color: $white-color;
@@ -154,4 +164,31 @@
   font-size: 16px;
   line-height: 20px;
   width: 161px;
+  margin: 0 auto;
+  transform: translateY(187px);
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    text-align: start;
+    transform: translateY(0);
+    margin: auto 125px auto auto;
+
+    &::before {
+      left: 15%;
+      top: 30%;
+    }
+  }
+}
+
+.additionally__label {
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.additionally__input:checked ~ .ckeckboxmark::after {
+  display: block;
 }

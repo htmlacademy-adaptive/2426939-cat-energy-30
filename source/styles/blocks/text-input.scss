@@ -1,12 +1,38 @@
 .text-input {
   border: 1px solid $special-grey-3;
   flex-grow: 1;
-  padding: 14px 0 13px 15px;
+  padding: 14px 32px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 34px 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 36px;
+  }
+
+  //Применяется при ошибке в поле ввода
+  &--error {
+    border-color: $error-color;
+
+    & + .information__icon {
+      fill: $error-color;
+    }
+  }
 
   &::placeholder {
     color: $primary-color;
     font-family: $oswald-font;
     font-size: 16px;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    border-color: $special-grey-2;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid $primary-color;
   }
 }

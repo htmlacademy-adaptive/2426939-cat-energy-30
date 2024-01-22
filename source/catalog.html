@@ -13,7 +13,7 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <div class="header__wrapper">
+      <div class="header__wrapper header__wrapper--indent">
         <a href="index.html" class="header__logo logo">
           <picture>
             <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
@@ -30,15 +30,15 @@
             <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
           </picture>
         </a>
-        <nav class="navigation">
+        <nav class="navigation navigation--opened navigation--no-js">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
-            <li class="navigation__item navigation__item--current">
+            <li class="navigation__item">
               <a href="index.html" class="navigation__link">Главная</a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--current">
               <a href="catalog.html" class="navigation__link">Каталог продукции</a>
             </li>
             <li class="navigation__item">
@@ -289,6 +289,7 @@
             </li>
           </ul>
           <div class="additional-products__presents-wrapper">
+            <span class="additional-products__presents-gift"></span>
             <p class="additional-products__presents-text">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
