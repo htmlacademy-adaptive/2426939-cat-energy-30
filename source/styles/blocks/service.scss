@@ -57,11 +57,12 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    width: 200px;
+    width: 268px;
     height: 211px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 22px;
+    top: 23%;
+    
   }
 
   @media (min-width: $desktop-width) {

@@ -1,5 +1,13 @@
 .stages {
   padding: 20px 0 49px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 126px;
+  }
 }
 
 .stages__title {

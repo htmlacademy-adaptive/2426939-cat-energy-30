@@ -13,7 +13,7 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <div class="header__wrapper">
+      <div class="header__wrapper header__wrapper--indent">
         <a href="index.html" class="header__logo logo">
           <picture>
             <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
@@ -30,7 +30,7 @@
             <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
           </picture>
         </a>
-        <nav class="navigation">
+        <nav class="navigation navigation--opened navigation--no-js">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -52,7 +52,6 @@
   <main class="main-container">
     <section class="questionnaire">
       <div class="container">
-
         <form action="https://echo.htmlacademy.ru/" method="post" class="questionnaire__form">
           <h1 class="questionnaire__title title">Подбор программы</h1>
           <p class="questionnaire__discription">Заполните анкету, и мы подберем
@@ -103,13 +102,15 @@
             <div class="questionnaire__form-wrapper">
               <div class="information__inner">
                 <label for="email" class="information__label label">E-mail:*</label>
-                <input id="email" type="text" class="information__text text-input" placeholder="кuklachev@gmail.com"
+                <input id="email" type="email" class="information__text text-input" placeholder="кuklachev@gmail.com"
                   required>
+                <div class="information__icon information__icon--email"></div>
               </div>
               <div class="information__inner">
                 <label for="telephone" class="information__label label">Телефон:*</label>
-                <input id="telephone" type="tel" class="information__text text-input" placeholder="8 (960) 900-60-90"
+                <input id="telephone" type="tel" class="information__text  text-input" placeholder="8 (960) 900-60-90"
                   required>
+                <div class="information__icon information__icon--tel"></div>
               </div>
             </div>
           </fieldset>
@@ -122,15 +123,15 @@
             <legend class="additionally__title form-title">Дополнительно</legend>
             <div class="additionally__wrapper">
               <label class="additionally__label label">Сахарозаменитель
-                <input type="checkbox" class="additionally__input control-input" checked>
+                <input type="checkbox" class="additionally__input control-input" checked disabled>
                 <span class="additionally__ckeckboxmark ckeckboxmark"></span>
               </label>
               <label class="additionally__label label">питьевая вода
-                <input type="checkbox" class="additionally__input control-input" >
+                <input type="checkbox" class="additionally__input control-input">
                 <span class="additionally__ckeckboxmark ckeckboxmark"></span>
               </label>
               <label class="additionally__label label">молоко
-                <input type="checkbox" class="additionally__input control-input" >
+                <input type="checkbox" class="additionally__input control-input">
                 <span class="additionally__ckeckboxmark ckeckboxmark"></span>
               </label>
               <label class="additionally__label label">витамины
