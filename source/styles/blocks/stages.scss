@@ -1,17 +1,17 @@
 .stages {
-  padding: 20px 0 49px 0;
+  padding: 23px 0 49px 0;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 104px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0 126px;
+    padding: 71px 0 128px;
   }
 }
 
 .stages__title {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -27,12 +27,12 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 230px 230px;
-    gap: 134px 179px;
+    gap: 134px 155px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 69px 95px;
+    gap: 69px 79px;
   }
 }
 
@@ -45,6 +45,10 @@
     grid-template-columns: 80px 1fr;
     gap: 31px;
     position: relative;
+  }
+
+  &:first-child .stages__number:last-child {
+    right: 21px;
   }
 }
 
@@ -69,7 +73,7 @@
   width: 200px;
 
   @media (min-width: $tablet-width) {
-    width: 224px;
+    width: 245px;
   }
 }
 
@@ -79,14 +83,18 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    top: -35px;
-    right: 0;
+    top: -40px;
+    right: -16px;
     display: block;
     color: $gb-basic-grey;
     text-align: center;
     font-family: $oswald-font;
     font-size: 280px;
     line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -2px;
   }
 }
 

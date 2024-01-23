@@ -18,6 +18,15 @@
   overflow: hidden;
   grid-row: 1/-1;
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: 13%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 1%;
+  }
 }
 
 .slider__image-wrapper--before {

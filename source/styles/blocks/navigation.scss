@@ -21,7 +21,7 @@
     position: absolute;
     display: block;
     top: 30px;
-    right: 23px;
+    right: 35px;
     border: none;
     background-color: $white-color;
     cursor: pointer;
@@ -39,7 +39,7 @@
 
     .navigation__item {
       text-align: center;
-      padding: 22px 0 24px 0;
+      padding: 22px 0 20px;
       border-top: 1px solid $bg-darker-grey;
     }
   }
@@ -49,6 +49,8 @@
     height: 2px;
     background-color: $black-color;
     border: none;
+    position: absolute;
+    right: 21px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -108,7 +110,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 31px;
+    gap: 32px;
+    flex-wrap: wrap;
   }
 }
 

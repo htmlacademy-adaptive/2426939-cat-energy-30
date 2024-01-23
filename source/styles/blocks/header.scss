@@ -20,20 +20,21 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
+    column-gap: 93px;
+    padding-top: 26px;
     margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
-    padding-top: 55px;
+    padding-top: 58px;
+    justify-content: space-between;
   }
 
   &--indent {
     @media (min-width: $desktop-width) {
-      margin-bottom: 110px;
+      margin-bottom: 107px;
     }
   }
 }

@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
@@ -23,12 +24,11 @@
     fill: $bg-basic-green;
     opacity: 0.3;
   }
-
-
 }
 
 .copyright__text {
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 125%;
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;

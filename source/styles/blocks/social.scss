@@ -15,8 +15,12 @@
 }
 
 .social__wrapper {
-  padding: 20px 0;
+  padding: 20px 0 15px;
   margin: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .social__item {}

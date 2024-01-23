@@ -3,10 +3,12 @@
   font-family: $oswald-font;
   color: $black-color;
   background-color: $bg-grey;
-  padding: 20px 0 40px 0;
+  padding: 25px 0 40px 0;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    background: linear-gradient(180deg, $white-color 50%, $bg-darker-grey 50%);
+    background: linear-gradient(180deg, $white-color 57%, $bg-darker-grey 57%);
+    padding-top: 44px;
+    padding-bottom: 100px;
 
     &::before {
       position: absolute;
@@ -20,8 +22,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 75px 0;
-    background: linear-gradient(180deg, $white-color 20%, $bg-darker-grey 20%);
+    padding: 0 0 55px 0;
+    background: linear-gradient(180deg, $white-color 22%, $gb-basic-grey 22%);
   }
 }
 
@@ -33,7 +35,7 @@
 }
 
 .example__title {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -62,14 +64,14 @@
   font-family: "Lato", sans-serif;
   color: $primary-color;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 433px;
     margin-bottom: 69px;
   }
 }
@@ -81,16 +83,19 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 106px;
   }
 }
 
 .example__list {
   display: flex;
   gap: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     margin-bottom: 0;
+    gap: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,15 +116,12 @@
     font-size: 14px;
     line-height: 14px;
   }
-
-
 }
 
 .example__description-text {
-
   display: inline-flex;
   background-color: $bg-grey;
-
+  font-family: $lato-font;
   transform: translateY(72%);
   max-width: 70%;
 
@@ -135,12 +137,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 90%;
+    max-width: 91%;
     background-color: $white-color;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $bg-darker-grey;
+    transform: translateY(50%);
+    background-color: $gb-basic-grey;
   }
 }
 
@@ -166,16 +169,28 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: block;
     font-size: 20px;
     margin-top: 11px;
-    text-align: end;
     flex-direction: row;
     margin-bottom: 0;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 30px;
+    font-size: 20px;
     justify-content: start;
+  }
+}
+
+.example__price-number {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: block;
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 66px;
   }
 }
 
@@ -194,7 +209,6 @@
 .example__image--before {}
 
 .example__wrapper-button {
-
 }
 
 .example__button {
@@ -207,7 +221,7 @@
   border-radius: 50%;
   background-color: $white-color;
   border: 1px solid $special-grey-4;
-  top: 47%;
+  top: 42%;
   right: 43%;
 
   &::before,
@@ -216,13 +230,13 @@
     position: absolute;
     display: block;
     width: 4px;
-    height: 100px;
+    height: 108px;
     background-color: $special-grey-4;
     left: 17px;
   }
 
   &::before {
-    top: -100px;
+    top: -108px;
   }
 
   &::after {
@@ -256,8 +270,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    right: 57%;
-
+    right: 47%;
+    top: 46%;
 
     &::before,
     &::after {
@@ -287,8 +301,6 @@
   height: 25px;
   background-image: url("../../images/icons/stack.svg#slider-toggle");
   background-repeat: no-repeat;
-
-
 }
 
 .example__image--after {}
