@@ -1,9 +1,10 @@
 .hero {
   position: relative;
-  background-image: linear-gradient(180deg, $bg-basic-green 100%, $white-color 40%), url("../../images/index-background-mobile@1x.png");
-  background-size: 320px 302px, auto;
+  background-image: linear-gradient(180deg, $bg-basic-green-3 100%, $white-color 40%), url("../../images/index-background-mobile@1x.png");
+  background-size: 320px 302px;
   background-position: top center;
   background-repeat: no-repeat;
+
 
   @media (min-width: $tablet-width) {
     background: none;

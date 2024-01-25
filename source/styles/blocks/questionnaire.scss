@@ -10,20 +10,27 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 39px;
+  max-width: 226px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
-    width: 323px;
+    max-width: 323px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
   }
 }
 
 .questionnaire__title {
   margin-bottom: 37px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    border: none;
   }
 }
 
@@ -38,14 +45,19 @@
 }
 
 .questionnaire__form-wrapper {
-  margin-bottom: 26px;
   width: 100%;
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
+
+    &:nth-child(2) {
+      .information__inner {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -57,9 +69,13 @@
 
 .questionnaire__button {
   margin-bottom: 21px;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
