@@ -1,10 +1,11 @@
 .products-more {
   padding: 25px 0;
   text-align: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $gb-basic-grey;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 37px 37px;
   }
 }
 
@@ -16,9 +17,17 @@
 }
 
 .products-more__button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  margin: 0 auto;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
     margin-bottom: 50px;
   }
 
@@ -42,11 +51,13 @@
 
 .products-more__text {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 133%;
   margin: 0;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 112%;
     margin-bottom: 82px;
   }
 
@@ -60,4 +71,8 @@
   background-color: $gb-basic-grey;
   text-transform: uppercase;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 8px;
+  }
 }

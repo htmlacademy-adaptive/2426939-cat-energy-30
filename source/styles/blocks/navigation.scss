@@ -110,8 +110,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 32px;
+    gap: 33px;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 32px;
   }
 }
 
