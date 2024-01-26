@@ -24,6 +24,12 @@
   }
 }
 
+.questionnaire__wrapper {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
+  }
+}
+
 .questionnaire__title {
   margin-bottom: 37px;
   margin-top: 28px;
@@ -35,13 +41,7 @@
 }
 
 .questionnaire__form {
-  @media (min-width: $tablet-width) {
-    padding: 0 40px;
-  }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
 }
 
 .questionnaire__form-wrapper {
@@ -65,6 +65,15 @@
   border: none;
   margin: 0;
   padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .questionnaire__button {
