@@ -1,10 +1,16 @@
 .text-input {
   border: 1px solid $special-grey-3;
+  font-family: $oswald-font;
+  color: $primary-color;
   flex-grow: 1;
-  padding: 15px 32px 13px 14px;
+  padding: 12px 32px 13px 14px;
+  font-size: 16px;
+  line-height: 112%;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 34px 13px 20px;
+    font-size: 20px;
+    line-height: normal;
+    padding: 11px 34px 11px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +22,7 @@
     border-color: $error-color;
 
     & + .information__icon {
-      fill: $error-color;
+      stroke: $error-color;
     }
   }
 
@@ -27,8 +33,8 @@
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
-    font-size: 20px;
-  }
+      font-size: 20px;
+    }
   }
 
   &:hover {
@@ -36,7 +42,7 @@
   }
 
   &:focus {
-    border: none;
+    border-color: $primary-color;
     outline: 2px solid $primary-color;
   }
 }

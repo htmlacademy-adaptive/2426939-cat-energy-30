@@ -10,8 +10,6 @@
   @media (min-width: $desktop-width) {
     padding: 0;
   }
-
-
 }
 
 .information__inner {
@@ -42,12 +40,11 @@
 }
 
 .information__text:focus + .information__icon {
-  background-color: $bg-basic-green;
+  stroke: $bg-basic-green;
 }
 
 .information__title {
   margin-bottom: 35px;
-  
 
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
@@ -67,13 +64,4 @@
   mask-repeat: no-repeat;
   fill: $white-color;
   stroke: $black-color;
-  background-color: $black-color;
-
-  &--tel {
-    mask-image: url("../../images/icons/stack.svg#phone-stroke");
-  }
-
-  &--email {
-    mask-image: url("../../images/icons/stack.svg#email-stroke");
-  }
 }

@@ -31,12 +31,6 @@
   fill: currentColor;
   text-decoration: none;
 
-  &--vkontakte {}
-
-  &--youtube {}
-
-  &--telegram {}
-
   &:hover .social__image {
     fill: $bg-basic-green;
   }
