@@ -196,9 +196,6 @@
   position: relative;
 }
 
-.example__wrapper-button {
-}
-
 .example__button {
   position: absolute;
   z-index: 11;
@@ -290,5 +287,3 @@
   mask-image: url("../../images/icons/stack.svg#slider-toggle");
   mask-repeat: no-repeat;
 }
-
-.example__image--after {}

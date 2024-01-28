@@ -14,6 +14,8 @@
 }
 
 .footer__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -31,5 +33,3 @@
     margin-right: 416px;
   }
 }
-
-.footer__copyright {}

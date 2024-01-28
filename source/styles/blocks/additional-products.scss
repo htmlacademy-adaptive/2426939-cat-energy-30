@@ -176,7 +176,7 @@
 }
 
 .additional-products__presents-wrapper {
-  background-image: url("../../images/cat-box-mobile@2x.jpg");
+  background-image: image-set(url("../../images/cat-box-mobile@1x.webp") type("image/webp") 1x, url("../../images/cat-box-mobile@2x.webp") type("image/webp") 2x, url("../../images/cat-box-mobile@1x.jpg") type("image/jpg") 1x, url("../../images/cat-box-mobile@2x.jpg") type("image/jpg") 2x);
   position: relative;
   width: 100%;
   min-height: 290px;
@@ -187,7 +187,7 @@
 
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    background-image: url("../../images/cat-box-tablet@2x.jpg");
+    background-image: image-set(url("../../images/cat-box-tablet@1x.webp") type("image/webp") 1x, url("../../images/cat-box-tablet@2x.webp") type("image/webp") 2x, url("../../images/cat-box-tablet@1x.jpg") type("image/jpg") 1x, url("../../images/cat-box-tablet@2x.jpg") type("image/jpg") 2x);
     display: flex;
     min-height: 200px;
     margin-bottom: 75px;
@@ -231,6 +231,8 @@
   width: 161px;
   margin: 0 auto;
   transform: translateY(187px);
+  max-height: 95px;
+  overflow: auto;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: start;
