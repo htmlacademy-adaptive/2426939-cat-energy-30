@@ -57,11 +57,13 @@
 
 .information__icon {
   position: absolute;
-  right: 14px;
+  right: 12px;
   width: 20px;
   height: 20px;
-  mask-size: 20px 20px;
-  mask-repeat: no-repeat;
   fill: $white-color;
   stroke: $black-color;
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+  }
 }

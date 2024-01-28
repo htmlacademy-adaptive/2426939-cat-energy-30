@@ -15,7 +15,7 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <div class="header__wrapper header__wrapper--indent line">
+      <div class="header__wrapper header__wrapper--indent">
         <a href="index.html" class="header__logo logo">
           <picture>
             <source type="image/svg+xml" media="(min-width:1280px)" srcset="images/logo-desktop.svg" width="70"
@@ -76,9 +76,9 @@
                 <input id="age" type="text" class="information__text text-input" placeholder="7" required>
               </div>
             </fieldset>
-            <fieldset class="questionnaire__field task line">
+            <fieldset class="questionnaire__field task">
               <legend class="visually-hidden">Основная задача</legend>
-              <ul class="task__list">
+              <ul class="task__list line">
                 <li class="task__item">
                   <label class="task__label label">похудение
                     <input type="radio" name="task" value="slimming" class="task__input control-input" checked>
@@ -136,20 +136,20 @@
             <legend class="additionally__title form-title">Дополнительно</legend>
             <div class="additionally__wrapper">
               <label class="additionally__label label">Сахарозаменитель
-                <input type="checkbox" class="additionally__input control-input" checked disabled>
-                <span class="additionally__ckeckboxmark ckeckboxmark"></span>
+                <input type="checkbox" class="control-input" checked disabled>
+                <span class="ckeckboxmark"></span>
               </label>
               <label class="additionally__label label">питьевая вода
-                <input type="checkbox" class="additionally__input control-input">
-                <span class="additionally__ckeckboxmark ckeckboxmark"></span>
+                <input type="checkbox" class="control-input">
+                <span class="ckeckboxmark"></span>
               </label>
               <label class="additionally__label label">молоко
                 <input type="checkbox" class="additionally__input control-input">
-                <span class="additionally__ckeckboxmark ckeckboxmark"></span>
+                <span class="ckeckboxmark"></span>
               </label>
               <label class="additionally__label label">витамины
                 <input type="checkbox" class="additionally__input control-input">
-                <span class="additionally__ckeckboxmark ckeckboxmark"></span>
+                <span class="ckeckboxmark"></span>
               </label>
               <button type="submit" class="questionnaire__button button">отправить заявку</button>
               <p class="questionnaire__text">* — Обязательные поля</p>
@@ -225,12 +225,10 @@
             </a>
           </li>
         </ul>
-        <div class="footer__copyright copyright ">
-          <a class="copyright__link " href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">HTML Academy</span>
-          </a>
+        <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="social__image" width="27" height="34" aria-hidden="true" focusable="false">
+            <span class="copyright__text">HTML Academy</span>
+            <svg class="copyright__image" width="27" height="34" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#logo-html-academy"></use>
             </svg>
           </a>
@@ -240,5 +238,4 @@
   </footer>
   <script src="scripts/script.js"></script>
 </body>
-
 </html>

@@ -10,11 +10,11 @@
 
   &::before {
     content: "";
-    display: block;
     position: absolute;
+    display: block;
     top: 14px;
     left: 21px;
-    width: 93%;
+    width: 99%;
     height: 2px;
     background-color: $bg-basic-green;
     z-index: -2;
