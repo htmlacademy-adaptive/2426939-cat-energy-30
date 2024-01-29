@@ -1,6 +1,6 @@
 .additionally {
   @media (min-width: $desktop-width) {
-    padding-bottom: 79px;
+    padding-bottom: 20px;
   }
 }
 
@@ -9,13 +9,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 42px 60px;
+    gap: 50px 60px;
     align-items: center;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 65px 80px;
+    gap: 38px 80px;
     align-items: start;
   }
 }
@@ -24,15 +25,15 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 62px;
+    margin-bottom: 66px;
   }
 }
 
 .additionally__label {
   &:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
@@ -42,6 +43,3 @@
     line-height: 20px;
   }
 }
-.additionally__input {}
-
-.additionally__ckeckboxmark {}

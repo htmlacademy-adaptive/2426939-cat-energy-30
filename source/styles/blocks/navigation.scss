@@ -21,7 +21,7 @@
     position: absolute;
     display: block;
     top: 30px;
-    right: 23px;
+    right: 35px;
     border: none;
     background-color: $white-color;
     cursor: pointer;
@@ -37,43 +37,6 @@
       background-color: $white-color;
     }
 
-    .navigation__item {
-      text-align: center;
-      padding: 22px 0 24px 0;
-      border-top: 1px solid $bg-darker-grey;
-    }
-  }
-
-  .navigation--closed .navigation__toggle {
-    width: 24px;
-    height: 2px;
-    background-color: $black-color;
-    border: none;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      left: 0;
-      width: 24px;
-      height: 2px;
-      background-color: $black-color;
-    }
-
-    &::before {
-      top: -8px;
-    }
-
-    &::after {
-      top: 8px;
-    }
-  }
-
-  .navigation--opened {
     .navigation__toggle {
       &::before,
       &::after {
@@ -93,6 +56,53 @@
       }
     }
   }
+
+  .navigation__item {
+    text-align: center;
+    padding: 22px 0 20px;
+    border-top: 1px solid $bg-darker-grey;
+  }
+  //Используется при отсутствии JavaScript
+  .navigation--no-js {
+    .navigation__list {
+      display: block;
+    }
+
+    .navigation__toggle {
+      display: none;
+    }
+  }
+}
+
+.navigation--closed .navigation__toggle {
+  width: 24px;
+  height: 2px;
+  background-color: $black-color;
+  border: none;
+  position: absolute;
+  right: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $black-color;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -108,11 +118,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 31px;
+    gap: 33px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 32px;
   }
 }
-
-.navigation__item {}
 
 .navigation__item--current {
   @media (min-width: $tablet-width) {

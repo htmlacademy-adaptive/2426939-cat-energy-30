@@ -1,38 +1,32 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: $primary-color;
   fill: currentColor;
   text-decoration: none;
 
-  &--vkontakte {}
-
-  &--youtube {}
-
-  &--telegram {}
-
   &:hover {
-    fill: $bg-basic-green;
+    color: $bg-basic-green;
   }
 
   &:active {
-    fill: $bg-basic-green;
+    color: $bg-basic-green;
     opacity: 0.3;
   }
-
-
 }
 
 .copyright__text {
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 125%;
+  margin-right: 138px;
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
   }
 }
-
-.copyright__link--image {}

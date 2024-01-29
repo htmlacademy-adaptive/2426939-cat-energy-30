@@ -4,8 +4,42 @@
   font-size: 24px;
   line-height: 26px;
 
+  background-color: $white-color;
+  display: inline-block;
+  padding-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 14px;
+    left: 21px;
+    width: 99%;
+    height: 2px;
+    background-color: $bg-basic-green;
+    z-index: -2;
+  }
+
   @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0 41px 0 40px;
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 80px;
+    margin-left: -40px;
+
+    &::before {
+      top: 19px;
+      left: -32px;
+      width: 109%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 22px;
+      left: -110px;
+      width: 118%;
+    }
   }
 }

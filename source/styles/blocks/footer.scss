@@ -1,20 +1,35 @@
 .footer {
   display: block;
   text-align: center;
-  padding: 40px 0;
+  padding: 37px 0;
   background-color: $gb-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+  }
 }
 
 .footer__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
 
 .footer__link {
+  display: block;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
 }
-
-.footer__copyright {}
