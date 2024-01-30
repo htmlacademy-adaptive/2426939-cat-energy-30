@@ -1,12 +1,12 @@
 .map {
   position: relative;
-}
 
-.map__container {
-  background-color: $gb-basic-grey;
+  &--container {
+    background-color: $gb-basic-grey;
 
-  @media (min-width: $desktop-width) {
-    background-color: $white-color;
+    @media (min-width: $desktop-width) {
+      background-color: $white-color;
+    }
   }
 }
 
@@ -39,5 +39,26 @@
     gap: 87px;
     left: 31px;
     top: 95px;
+  }
+}
+
+.map__interactive-location {
+  display: block;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 112px;
+  z-index: 10;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    top: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
   }
 }

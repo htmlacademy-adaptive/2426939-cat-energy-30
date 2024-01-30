@@ -6,9 +6,4 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
-
-  &:hover .checkmark,
-  &:hover .ckeckboxmark {
-    border-color: $special-grey-5;
-  }
 }

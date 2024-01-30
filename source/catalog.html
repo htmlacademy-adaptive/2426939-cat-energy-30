@@ -33,7 +33,11 @@
               <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
             </picture>
           </a>
-          <nav class="navigation navigation--closed">
+          <!--navigation--opened - открытое меню
+              navigation--closed - закрытое меню
+              navigation--no-js -  меню при отсутствии js
+          -->
+          <nav class="navigation navigation--opened navigation--no-js">
             <button class="navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -271,7 +275,6 @@
                 <dt class="food__term">Цена</dt>
                 <dd class="food__definition">700 ₽</dd>
               </dl>
-
               <a href="404.html" class="product-card__button button">Заказать</a>
             </div>
             <div class="catalog__item product-card line">
@@ -362,7 +365,7 @@
           </div>
         </div>
       </section>
-      <section class="map map__container">
+      <section class="map map--container">
         <div class="container ">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="map__contacts map-contacts map__contacts--color">
@@ -373,7 +376,6 @@
             </div>
           </div>
         </div>
-        <div class="map__container">
           <picture>
             <source type="image/webp" media="(min-width:1280px)"
               srcset="images/location-desktop@1x.webp 1x, images/location-desktop@2x.webp 2x" width="1440" height="400">
@@ -388,7 +390,10 @@
             <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
               alt="Местоположение офиса" class="map__image" width="320" height="362">
           </picture>
-        </div>
+          <iframe class="map__interactive-location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            height="560" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д.19/8, Санкт-Петербург">
+          </iframe>
       </section>
     </main>
     <footer class="footer">
@@ -403,31 +408,31 @@
               <img class="logo__text" src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="25">
             </picture>
           </a>
-          <ul class="social social__wrapper">
-            <li class="social__item">
-              <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
-                <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#vkontakte"></use>
-                </svg>
-                <span class="visually-hidden">ВКонтакте.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
-                <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#youtube"></use>
-                </svg>
-                <span class="visually-hidden">Ютуб.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
-                <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#telegram"></use>
-                </svg>
-                <span class="visually-hidden">Телеграм.</span>
-              </a>
-            </li>
+          <ul class="social social--wrapper">
+              <li class="social__item">
+                <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
+                  <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#vkontakte"></use>
+                  </svg>
+                  <span class="visually-hidden">ВКонтакте.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
+                  <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">Ютуб.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
+                  <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#telegram"></use>
+                  </svg>
+                  <span class="visually-hidden">Телеграм.</span>
+                </a>
+              </li>
           </ul>
           <div class="copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
