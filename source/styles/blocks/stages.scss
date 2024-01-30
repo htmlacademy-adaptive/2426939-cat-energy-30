@@ -48,7 +48,11 @@
   }
 
   &:first-child .stages__number:last-child {
-    right: 21px;
+    right: 5px;
+
+    @media (min-width: $desktop-width) {
+      right: 21px;
+    }
   }
 }
 
