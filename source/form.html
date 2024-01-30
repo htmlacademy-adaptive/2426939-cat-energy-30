@@ -33,7 +33,11 @@
               <img src="images/logo-text-mobile.svg" class="logo__text" width="101" height="18" alt="Cat Energy">
             </picture>
           </a>
-          <nav class="navigation navigation--closed">
+          <!--navigation--opened - открытое меню
+              navigation--closed - закрытое меню
+              navigation--no-js -  меню при отсутствии js
+          -->
+          <nav class="navigation navigation--opened">
             <button class="navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -69,7 +73,6 @@
                   <input id="name" name="name" type="text" class="information__text text-input" placeholder="Барсик"
                     required>
                 </div>
-
                 <div class="information__inner">
                   <label for="weight" class="information__label label">Вес (кг):*</label>
                   <input id="weight" name="weight" type="text" class="information__text text-input" placeholder="7"
@@ -84,21 +87,23 @@
                 <legend class="visually-hidden">Основная задача</legend>
                 <ul class="task__list line">
                   <li class="task__item">
-                    <label class="task__label label">похудение
-                      <input type="radio" name="task" value="slimming" class="task__input control-input" checked>
-                      <span class="checkmark"></span>
+                    <input id="slimming" type="radio" name="task" value="slimming" class="task__input visually-hidden control-input"
+                      checked>
+                    <label for="slimming" class="task__label label">
+                      похудение
                     </label>
                   </li>
                   <li class="task__item">
-                    <label class="task__label label">Набор массы
-                      <input type="radio" name="task" value="gain" class="task__input control-input">
-                      <span class="checkmark"></span>
+                    <input id="gain" type="radio" name="task" value="gain" class="task__input visually-hidden control-input">
+                    <label for="gain" class="task__label label">
+                      Набор массы
                     </label>
                   </li>
                   <li class="task__item">
-                    <label class="task__label label">Не знаю (Нужен ваш совет)
-                      <input type="radio" name="task" value="advice" class="task__input control-input">
-                      <span class="checkmark"></span>
+                    <input id="advice" type="radio" name="task" value="advice"
+                      class="task__input visually-hidden control-input">
+                    <label for="advice" class="task__label label">
+                      Не знаю (Нужен ваш совет)
                     </label>
                   </li>
                 </ul>
@@ -106,8 +111,8 @@
             </div>
           </div>
           <div class="container">
-            <fieldset class="questionnaire__field information">
-              <legend class="information__title form-title">Контактные данные (владельца кота)</legend>
+            <div class="questionnaire__field information">
+              <h2 class="information__title form-title">Контактные данные (владельца кота)</h2>
               <div class="questionnaire__form-wrapper">
                 <div class="information__inner">
                   <label for="email" class="information__label label">E-mail:*</label>
@@ -126,43 +131,55 @@
                   </svg>
                 </div>
               </div>
-            </fieldset>
+            </div>
           </div>
           <div class="container">
-            <fieldset class="questionnaire__field commentary">
-              <legend class="commentary__title form-title">Комментарий</legend>
+            <div class="questionnaire__field commentary">
+              <h2 class="commentary__title form-title">Комментарий</h2>
               <textarea class="commentary__text" name="comment" cols="30" rows="10"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
+            </div>
           </div>
           <div class="container">
-            <fieldset class="questionnaire__field additionally">
-              <legend class="additionally__title form-title">Дополнительно</legend>
-              <div class="additionally__wrapper">
-                <label class="additionally__label label">Сахарозаменитель
-                  <input type="checkbox" name="substitute" class="additionally__input control-input" checked>
-                  <span class="ckeckboxmark"></span>
-                </label>
-                <label class="additionally__label label">питьевая вода
-                  <input type="checkbox" name="water" class="additionally__input control-input">
-                  <span class="ckeckboxmark"></span>
-                </label>
-                <label class="additionally__label label">молоко
-                  <input type="checkbox" name="milk" class="additionally__input control-input">
-                  <span class="ckeckboxmark"></span>
-                </label>
-                <label class="additionally__label label">витамины
-                  <input type="checkbox" name="vitamins" class="additionally__input control-input">
-                  <span class="ckeckboxmark"></span>
-                </label>
-                <button type="submit" class="questionnaire__button button">отправить заявку</button>
-                <p class="questionnaire__text">* — Обязательные поля</p>
-              </div>
-            </fieldset>
+            <div class="questionnaire__field additionally">
+              <h2 class="additionally__title form-title">Дополнительно</h2>
+              <ul class="additionally__wrapper">
+                <li class="additionally__item">
+                  <input id="substitute" type="checkbox" name="substitute"
+                    class="additionally__input visually-hidden control-input" checked>
+                  <label for="substitute" class="additionally__label label">
+                    Сахарозаменитель
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <input id="water" type="checkbox" name="water"
+                    class="additionally__input visually-hidden control-input">
+                  <label for="water" class="additionally__label label">
+                    питьевая вода
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <input id="milk" type="checkbox" name="milk"
+                    class="additionally__input visually-hidden control-input">
+                  <label for="milk" class="additionally__label label">
+                    молоко
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <input id="vitamins" type="checkbox" name="vitamins"
+                    class="additionally__input visually-hidden control-input">
+                  <label for="vitamins" class="additionally__label label">
+                    витамины
+                  </label>
+                </li>
+              </ul>
+              <button type="submit" class="questionnaire__button button">отправить заявку</button>
+              <p class="questionnaire__text">* — Обязательные поля</p>
+            </div>
           </div>
         </form>
       </section>
-      <section class="map map__container">
+      <section class="map map--container">
         <div class="container ">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="map__contacts map-contacts map__contacts--color">
@@ -173,22 +190,24 @@
             </div>
           </div>
         </div>
-        <div class="map__container">
-          <picture>
-            <source type="image/webp" media="(min-width:1280px)"
-              srcset="images/location-desktop@1x.webp 1x, images/location-desktop@2x.webp 2x" width="1440" height="400">
-            <source type="image/webp" media="(min-width:768px)"
-              srcset="images/location-tablet@1x.webp 1x, images/location-tablet@2x.webp 2x" width="768" height="400">
-            <source type="image/webp" srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x"
-              width="320" height="362">
-            <source type="image/png" media="(min-width:1280px)"
-              srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400">
-            <source type="image/png" media="(min-width:768px)"
-              srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400">
-            <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
-              alt="Местоположение офиса" class="map__image" width="320" height="362">
-          </picture>
-        </div>
+        <picture>
+          <source type="image/webp" media="(min-width:1280px)"
+            srcset="images/location-desktop@1x.webp 1x, images/location-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width:768px)"
+            srcset="images/location-tablet@1x.webp 1x, images/location-tablet@2x.webp 2x" width="768" height="400">
+          <source type="image/webp" srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x"
+            width="320" height="362">
+          <source type="image/png" media="(min-width:1280px)"
+            srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width:768px)"
+            srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400">
+          <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Местоположение офиса"
+            class="map__image" width="320" height="362">
+        </picture>
+        <iframe class="map__interactive-location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          height="560" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д.19/8, Санкт-Петербург">
+        </iframe>
       </section>
     </main>
     <footer class="footer">
@@ -203,31 +222,31 @@
               <img class="logo__text" src="images/footer-logo.svg" alt="Логотип Кэт энерджи" width="128" height="24">
             </picture>
           </a>
-          <ul class="social social__wrapper">
-            <li class="social__item">
-              <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
-                <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#vkontakte"></use>
-                </svg>
-                <span class="visually-hidden">ВКонтакте.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
-                <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#youtube"></use>
-                </svg>
-                <span class="visually-hidden">Ютуб.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
-                <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#telegram"></use>
-                </svg>
-                <span class="visually-hidden">Телеграм.</span>
-              </a>
-            </li>
+          <ul class="social social--wrapper">
+              <li class="social__item">
+                <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
+                  <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#vkontakte"></use>
+                  </svg>
+                  <span class="visually-hidden">ВКонтакте.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
+                  <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">Ютуб.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
+                  <svg class="social__image" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#telegram"></use>
+                  </svg>
+                  <span class="visually-hidden">Телеграм.</span>
+                </a>
+              </li>
           </ul>
           <div class="copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
