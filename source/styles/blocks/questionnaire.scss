@@ -58,12 +58,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     margin-bottom: 69px;
-
-    &:nth-child(2) {
-      .information__inner {
-        margin-bottom: 0;
-      }
-    }
   }
 }
 
