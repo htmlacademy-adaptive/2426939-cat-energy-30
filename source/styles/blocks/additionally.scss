@@ -85,15 +85,15 @@
     width: 10px;
     height: 16px;
     top: -2%;
-    left: 4%;
+    left: 5%;
     border: solid $bg-basic-green;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 
     @media (min-width: $tablet-width) {
       width: 15px;
-      height: 21px;
-      top: -16%;
+      height: 22px;
+      top: -19%;
     }
   }
 
