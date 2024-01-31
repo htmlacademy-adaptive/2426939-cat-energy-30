@@ -178,9 +178,10 @@
 .additional-products__presents-wrapper {
   background: $bg-basic-green-3  image-set(url("../../images/cat-box-mobile@1x.webp") type("image/webp") 1x, url("../../images/cat-box-mobile@2x.webp") type("image/webp") 2x, url("../../images/cat-box-mobile@1x.jpg") type("image/jpg") 1x, url("../../images/cat-box-mobile@2x.jpg") type("image/jpg") 2x);
   position: relative;
+  display: flex;
   width: 100%;
   min-height: 290px;
-  background-size: 280px 290px;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   margin-bottom: 35px;
@@ -200,6 +201,7 @@
     margin-bottom: 0;
     min-height: 288px;
     background-position: 95% 60%;
+    background-size: cover;
   }
 }
 
@@ -230,9 +232,7 @@
   line-height: 20px;
   width: 161px;
   margin: 0 auto;
-  transform: translateY(187px);
-  max-height: 95px;
-  overflow: auto;
+  margin-top: 186px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: start;
