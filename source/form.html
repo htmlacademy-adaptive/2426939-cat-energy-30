@@ -8,8 +8,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -70,17 +70,17 @@
                 <legend class="visually-hidden">Заполнение информации о коте</legend>
                 <div class="information__inner">
                   <label for="name" class="information__label label">ИМЯ:*</label>
-                  <input id="name" name="name" type="text" class="information__text text-input" placeholder="Барсик"
+                  <input id="name" name="name" type="text" class="information__text text-input text-input--error" placeholder="Барсик"
                     required>
                 </div>
                 <div class="information__inner">
                   <label for="weight" class="information__label label">Вес (кг):*</label>
-                  <input id="weight" name="weight" type="text" class="information__text text-input" placeholder="7"
+                  <input id="weight" name="weight" type="number" min="0" max="100" class="information__text text-input text-input--error" placeholder="7"
                     required>
                 </div>
                 <div class="information__inner">
                   <label for="age" class="information__label label">Возраст (лет):</label>
-                  <input id="age" name="age" type="text" class="information__text text-input" placeholder="7" required>
+                  <input id="age" name="age" type="number" min="0" max="100" class="information__text text-input" placeholder="7">
                 </div>
               </fieldset>
               <fieldset class="questionnaire__field task">
@@ -116,7 +116,7 @@
               <div class="questionnaire__form-wrapper">
                 <div class="information__inner">
                   <label for="email" class="information__label label">E-mail:*</label>
-                  <input id="email" name="email" type="email" class="information__text text-input"
+                  <input id="email" name="email" type="email" class="information__text text-input text-input--error"
                     placeholder="кuklachev@gmail.com" required>
                   <svg class="information__icon" width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="images/icons/stack.svg#email-stroke"></use>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="information__inner">
                   <label for="telephone" class="information__label label">Телефон:*</label>
-                  <input id="telephone" name="telephone" type="tel" class="information__text  text-input "
+                  <input id="telephone" name="telephone" type="tel" class="information__text text-input text-input--error"
                     placeholder="8 (960) 900-60-90" required>
                   <svg class="information__icon" width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="images/icons/stack.svg#phone-stroke"></use>
