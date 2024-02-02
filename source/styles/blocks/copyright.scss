@@ -9,15 +9,15 @@
   display: flex;
   align-items: center;
   color: $primary-color;
-  fill: currentColor;
+  fill: $primary-color;
   text-decoration: none;
 
   &:hover {
-    color: $bg-basic-green;
+    fill: $bg-basic-green;
   }
 
   &:active {
-    color: $bg-basic-green;
+    fill: $bg-basic-green;
     opacity: 0.3;
   }
 }
